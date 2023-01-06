@@ -6,6 +6,7 @@
 
     --font-size: 18px;
     --font-size-header: 24px;
+    --font-size-logo: 36px;
 
     --line-height: 1.5;
     --common-width: 70%;
@@ -72,6 +73,10 @@ nav .list-items, nav .logo  {
     cursor: pointer;
 }
 
+nav .logo {
+    font-size: var(--font-size-logo);
+    color: var(--accent-color);
+}
 
 .welcome-page {
     background-color: rgb(147, 133, 133);
