@@ -1,13 +1,14 @@
 :root {
+    /* PAGE COLORS */
     --background-color: #292c35;
     --secondary-color: #ccc;
     --accent-color: #a66cff;
     --text-color: #fff;
-
+    /* FONT SIZES */
     --font-size: 18px;
     --font-size-header: 24px;
     --font-size-logo: 36px;
-
+    /* PAGE DIMENSIONS */
     --line-height: 1.5;
     --common-width: 70%;
 
@@ -71,6 +72,11 @@ nav .list-items, nav .logo  {
 .list-items:hover {
     color: var(--accent-color);
     cursor: pointer;
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
 }
 
 nav .logo {
