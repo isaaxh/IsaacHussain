@@ -2,28 +2,27 @@
     /* PAGE COLORS */
     --background-color: #292c35;
     --secondary-color: #ccc;
-    --accent-color: #a66cff;
+    --accent-color: #8339f1;
     --text-color: #fff;
     /* FONT SIZES */
-    --font-size: 18px;
-    --font-size-header: 24px;
+    --font-size: 20px;
+    --font-hero-header: 56px;
+    --font-nav-header: 24px;
     --font-size-logo: 36px;
     /* PAGE DIMENSIONS */
     --line-height: 1.5;
     --common-width: 70%;
 
-    --primary-color: rgb(235, 235, 235);
+    /* --primary-color: rgb(235, 235, 235);
     --secondary-color: #ffff;
-    --accent-color: #a66cff;
     --hover-color: #814ece;
     --text-color-1: #ffff;
     --text-color-2: rgba(15, 15, 15, 0.933);
 
     --primary-color: #292c35;
     --secondary-color: #191d27;
-    --accent-color: #a66cff;
     --text-color-2: #ffff;
-    --text-color-1: rgba(15, 15, 15, 0.933);
+    --text-color-1: rgba(15, 15, 15, 0.933); */
 }
 
 * {
@@ -36,13 +35,13 @@
     vertical-align: baseline;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: var(--font-size);
-    background-color: var(--background-color);
     color: var(--text-color);
-  }
+}
 
 html, body {
     width: 100%;
     height: 100%;
+    background-color: var(--background-color);
 }
 
 nav .nav-container{
@@ -58,7 +57,7 @@ nav .nav-container{
 
 nav .nav-list {
     width: 300px;
-    font-size: var(--font-size-header);
+    font-size: var(--font-nav-header);
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -66,7 +65,7 @@ nav .nav-list {
 
 
 nav .list-items, nav .logo  {
-    font-size: var(--font-size-header);
+    font-size: var(--font-nav-header);
 }
 
 .list-items:hover {
@@ -84,12 +83,50 @@ nav .logo {
     color: var(--accent-color);
 }
 
-.welcome-page {
-    background-color: rgb(147, 133, 133);
+/* hero page */
+
+.hero-page {
+    /* background-color: rgb(147, 133, 133); */
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.hero-header {
+    font-size: var(--font-hero-header);
+    font-weight: bold;
+    margin: 120px auto 20px; 
+    text-align: center;
 }
 
 .about-page {
-    background-color: brown;
+    background-color: var(--accent-color);
+    height: 550px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content {
+    width: 850px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.about-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom:15px;
+}
+
+.about-description {
+    text-align: center; 
+
 }
   
   
