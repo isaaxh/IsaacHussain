@@ -7,8 +7,11 @@
     --shadow:  0 5px 5px 0 rgba(0, 0, 0, 0.2);
     /* FONT style */
     --font-size: 20px;
-    --font-hero-header: 56px;
-    --font-nav-header: 24px;
+    --font-header-1: 56px;
+    --font-header-1: 56px;
+    --font-header-2: 34px;
+    --font-header-3: 24px;
+    --font-header-3: 24px;
     --font-size-logo: 36px;
     --font-weight: 600;
     /* PAGE DIMENSIONS */
@@ -60,7 +63,7 @@ nav .nav-container{
 
 nav .nav-list {
     width: 300px;
-    font-size: var(--font-nav-header);
+    font-size: var(--font-header-3);
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -68,7 +71,7 @@ nav .nav-list {
 
 
 nav .list-items, nav .logo  {
-    font-size: var(--font-nav-header);
+    font-size: var(--font-header-3);
 }
 
 .list-items:hover {
@@ -97,7 +100,7 @@ nav .logo {
 }
 
 .hero-header {
-    font-size: var(--font-hero-header);
+    font-size: var(--font-header-1);
     font-weight: var(--font-weight);
     margin: 120px auto 20px; 
     text-align: center;
@@ -124,7 +127,7 @@ nav .logo {
 }
 
 .about-header {
-    font-size: 1.5rem;
+    font-size:var(--font-header-2);
     font-weight: var(--font-weight);
     margin-bottom:15px;
 }
@@ -188,17 +191,33 @@ padding-bottom: 15px;
 }
 
 .skill-box .skill-header {
-    font-size: var(--font-nav-header);
+    font-size: var(--font-header-3);
     font-weight: var(--font-weight);
 }
 
 .skill-sub-headings {
-    /* color: var(--accent-color); */
     font-weight: var(--font-weight);
 }
 
 
 /* Work page */
 
-
+.work-section {
+    background-color: rgb(83, 0, 0);
+    height: 900px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
+.my-work-header {
+    font-size: var(--font-header-2);
+    font-weight: var(--font-weight);
+    padding-bottom: 15px;
+}
+
+.work-section p {
+    padding: 15px;
+}
+
