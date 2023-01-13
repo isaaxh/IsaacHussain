@@ -218,6 +218,25 @@ padding-bottom: 15px;
 }
 
 .work-section p {
-    padding: 15px;
+    padding: 10px 0 100px;
 }
 
+/* project cards */
+
+.project-grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.project-cards {
+    height: 250px;
+    width: 350px;
+    border-radius: var(--border-radius);
+    background-color: rgb(7, 145, 46);
+    border: 1px solid #292c35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
