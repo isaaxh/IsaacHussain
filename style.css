@@ -5,11 +5,12 @@
     --accent-color: #8339f1;
     --text-color: #fff;
     --shadow:  0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    /* FONT SIZES */
+    /* FONT style */
     --font-size: 20px;
     --font-hero-header: 56px;
     --font-nav-header: 24px;
     --font-size-logo: 36px;
+    --font-weight: 600;
     /* PAGE DIMENSIONS */
     --line-height: 1.5;
     --common-width: 70%;
@@ -92,16 +93,17 @@ nav .logo {
     height: 900px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
 .hero-header {
     font-size: var(--font-hero-header);
-    font-weight: bold;
+    font-weight: var(--font-weight);
     margin: 120px auto 20px; 
     text-align: center;
 }
+
+/* about page */
 
 .about-section {
     background-color: var(--accent-color);
@@ -123,7 +125,7 @@ nav .logo {
 
 .about-header {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     margin-bottom:15px;
 }
 
@@ -132,6 +134,9 @@ nav .logo {
 }
 
 
+/* Skill page */
+
+/* layout styling */
 .skill-section{
     position: relative;
     background-color: inherit;
@@ -160,12 +165,36 @@ nav .logo {
 
 .skill-box {
     flex: 1;
-    padding: 1rem;
+    padding: 2rem 2.5rem;
     text-align: center;
 }
 
 .skill-summary-container .middle-box {
     box-shadow: var(--shadow);
+}
+
+/* Inside each cards */
+
+.skill-box * {
+    padding-top: 10px;
+}
+
+.skill-logo-container, .skill-header {
+padding-bottom: 15px;
+}
+
+.skill-logo {
+    font-size: var(--font-size-logo);
+}
+
+.skill-box .skill-header {
+    font-size: var(--font-nav-header);
+    font-weight: var(--font-weight);
+}
+
+.skill-sub-headings {
+    /* color: var(--accent-color); */
+    font-weight: var(--font-weight);
 }
 
 
