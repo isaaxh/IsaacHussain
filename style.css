@@ -245,10 +245,17 @@ padding-bottom: 15px;
 
 .btn-github {
     background-color: transparent;
+    color: var(--accent-color);
     margin-top: 90px;
     font-size: var(--font-header-3);
     height: 60px;
     width: 400px;
-    border: 0.5px solid white;
+    border: 0.5px solid var(--accent-color);
     border-radius: var(--border-radius-round);
+    transition: 0.3s;
+}
+
+.btn-github:hover {
+    background-color: var(--accent-color);
+    color: white;
 }
