@@ -4,6 +4,7 @@
     --secondary-color: #ccc;
     --accent-color: #8339f1;
     --text-color: #fff;
+    --shadow:  0 5px 5px 0 rgba(0, 0, 0, 0.2);
     /* FONT SIZES */
     --font-size: 20px;
     --font-hero-header: 56px;
@@ -12,7 +13,7 @@
     /* PAGE DIMENSIONS */
     --line-height: 1.5;
     --common-width: 70%;
-    --border-radius: 5px;
+    --border-radius: 8px;
 
     /* --primary-color: rgb(235, 235, 235);
     --secondary-color: #ffff;
@@ -149,11 +150,24 @@ nav .logo {
     bottom: 70px;
     display: flex;
     border-radius: var(--border-radius);
+    flex: 1;
+    box-shadow: var(--shadow);
 }
 
 .skill-summary-container * {
     color: inherit;
 }
+
+.skill-box {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.skill-summary-container .middle-box {
+    box-shadow: var(--shadow);
+}
+
 
 
   
