@@ -18,6 +18,7 @@
     --line-height: 1.5;
     --common-width: 70%;
     --border-radius: 8px;
+    --border-radius-round: 25px;
 
     /* --primary-color: rgb(235, 235, 235);
     --secondary-color: #ffff;
@@ -203,8 +204,8 @@ padding-bottom: 15px;
 /* Work page */
 
 .work-section {
-    background-color: rgb(83, 0, 0);
-    height: 900px;
+    background-color: inherit;
+    height: 1000px;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -239,4 +240,15 @@ padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.btn-github {
+    background-color: transparent;
+    margin-top: 90px;
+    font-size: var(--font-header-3);
+    height: 60px;
+    width: 400px;
+    border: 0.5px solid white;
+    border-radius: var(--border-radius-round);
 }
