@@ -196,6 +196,10 @@ nav .logo {
 padding-bottom: 15px;
 }
 
+.skill-logo-container .skill-logo {
+    font-size: 50px;
+}
+
 .skill-logo {
     font-size: var(--font-size-logo);
 }
