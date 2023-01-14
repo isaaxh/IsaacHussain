@@ -197,25 +197,33 @@
     </section>
     <section class="contact-section">
       <form action="contact-details.html" method="GET">
-        <h1>Get in touch</h1>
-        <div class="name-container">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div class="email-container">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
+        <h1 class="contact-header">Get in touch</h1>
+        <div class="name-email-container">
+          <div class="name-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="email-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
         </div>
         <div class="message-container">
           <label for="message">Message</label>
-          <input type="text" name="message" id="message" required />
+          <textarea type="text" name="message" id="message" rows="7" required>
+          </textarea>
         </div>
-        <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </form>
     </section>
     <footer class="footer">
-      <div>footer</div>
+      <div class="footer-links-container">
+        <ul>
+          <li>LinkedIn</li>
+          <li>Email</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

@@ -8,9 +8,7 @@
     /* FONT style */
     --font-size: 20px;
     --font-header-1: 56px;
-    --font-header-1: 56px;
     --font-header-2: 34px;
-    --font-header-3: 24px;
     --font-header-3: 24px;
     --font-size-logo: 36px;
     --font-weight: 600;
@@ -18,6 +16,7 @@
     --line-height: 1.5;
     --common-width: 70%;
     --border-radius: 8px;
+    --border-radius-contact: 4px;
     --border-radius-round: 25px;
 
     /* --primary-color: rgb(235, 235, 235);
@@ -204,7 +203,7 @@ padding-bottom: 15px;
 
 .work-section {
     background-color: inherit;
-    height: 1000px;
+    height: 1100px;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -236,7 +235,6 @@ padding-bottom: 15px;
     height: 250px;
     width: 350px;
     border-radius: var(--border-radius);
-    background-color: chocolate;
     color: #292c35;
     box-shadow: var(--shadow);
     display: flex;
@@ -296,12 +294,6 @@ img {
     color: #292c35;
 }
 
-
-
-
-
-
-
 .btn-github {
     background-color: transparent;
     color: var(--accent-color);
@@ -317,4 +309,84 @@ img {
 .btn-github:hover {
     background-color: var(--accent-color);
     color: white;
+}
+
+/* CONTACT SECTION */
+
+
+
+.contact-section {
+    height: 600px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    color: #292c35;
+    width: 62%;
+    height: 500px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .contact-header {
+    margin: 25px 0px;
+    font-size: var(--font-header-2);
+    font-weight: var(--font-weight);
+}
+
+form .name-email-container {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.name-container, .email-container, .message-container  {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 15px
+}
+
+form input {
+    width: 296px;
+    height: 38px;
+    border-radius: var(--border-radius-contact);
+}
+
+form .message-container {
+    width: 650px;
+}
+
+form #message{
+    width: 100%;
+    margin-bottom: 40px;
+    resize: vertical;
+    border-radius: var(--border-radius-contact);
+}
+
+form button {
+    width: 100px;
+    height: 34px;
+    color: white;
+    border-radius: var(--border-radius-round);
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+form button:hover {
+    color: #292c35;
+    background-color: white;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--accent-color);
+    height: 200px;
 }
