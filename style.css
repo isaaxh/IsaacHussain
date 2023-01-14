@@ -2,7 +2,7 @@
     /* PAGE COLORS */
     --background-color: #292c35;
     --secondary-color: #ccc;
-    --accent-color: #8339f1;
+    --accent-color: #7225e6;
     --text-color: #fff;
     --shadow:  0 5px 5px 0 rgba(0, 0, 0, 0.2);
     /* FONT style */
@@ -93,7 +93,6 @@ nav .logo {
 /* hero page */
 
 .hero-section {
-    /* background-color: rgb(147, 133, 133); */
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -218,9 +217,11 @@ padding-bottom: 15px;
     padding-bottom: 15px;
 }
 
-.work-section p {
+.work-section .work-description {
     padding: 10px 0 100px;
 }
+
+
 
 /* project cards */
 
@@ -231,17 +232,75 @@ padding-bottom: 15px;
     gap: 50px;
 }
 
-.project-cards {
+ .project-cards {
     height: 250px;
     width: 350px;
     border-radius: var(--border-radius);
-    background-color: rgb(7, 145, 46);
-    border: 1px solid #292c35;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: chocolate;
+    color: #292c35;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
+
+img {
+    height: 250px;
+    width: 350px;
+}
+
+.project-cards .project-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -110px;
+    background-color: rgb(27,27,27, 0.5);
+    transition: all .5s;
+}
+
+.project-cards:hover .project-info {
+    bottom: 0px;
+    background-color: black;
+}
+
+.project-cards .project-title {
+    margin: 6px;
+    font-size: 30px;
+    font-weight: var(--font-weight);
+}
+
+.project-cards .project-description {
+    margin: 6px;
+}
+
+.project-cards span {
+    font-weight: var(--font-weight);
+}
+
+.project-cards .btn-container {
+    text-align: center;
+    padding: 15px;
+}
+
+.project-cards button {
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: var(--border-radius-round);
+    cursor: pointer;
+}
+
+.project-cards button:hover {
+    background-color: white;
+    color: #292c35;
+}
+
+
+
+
+
+
 
 .btn-github {
     background-color: transparent;
