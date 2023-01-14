@@ -27,9 +27,15 @@
         </div>
         <div class="nav-list-container">
           <ul class="nav-list">
-            <li class="list-items">About</li>
-            <li class="list-items">Work</li>
-            <li class="list-items">Contact</li>
+            <li class="list-items scroll-link">
+              <a href="#about-section">About</a>
+            </li>
+            <li class="list-items scroll-link">
+              <a href="#work-section">Work</a>
+            </li>
+            <li class="list-items scroll-link">
+              <a href="#contact-section">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -40,8 +46,9 @@
         I design and create simple and beautiful websites and I love creating
         websites
       </p>
+      <img src="https://mattfarley.ca/img/hero-devices.svg" alt="devices" />
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about-section">
       <div class="about-content">
         <h1 class="about-header">Hi, I'm Isaac. Nice to have you here.</h1>
         <p class="about-description">
@@ -104,11 +111,13 @@
         </div>
       </div>
     </section>
-    <section class="work-section">
+    <section class="work-section" id="work-section">
       <h1 class="my-work-header">My Recent Work</h1>
       <p class="work-description">
         Here are the projects I have worked on. Want to see more?
-        <a href="contact-page" class="email-me-link">Email me.</a>
+        <a href="mailto:isaax.business@gmail.com" class="email-me-link"
+          >Email me.</a
+        >
       </p>
       <div class="project-grid-container">
         <div class="project-cards project-library">
@@ -120,7 +129,11 @@
               be marked as read.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/library/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
@@ -135,7 +148,11 @@
               This is a classic game created using HTML, CSS and JavaScript.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/rock_paper_scissor/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
@@ -148,7 +165,11 @@
               size and color.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/etch-a-sketch/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
@@ -161,7 +182,11 @@
               HTML, CSS and JavaScript.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/odin_calculator/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
@@ -174,7 +199,11 @@
               CSS and JavaScript.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/stop_watch/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
@@ -187,14 +216,23 @@
               HTML, CSS and JavaScript.
             </p>
             <div class="btn-container">
-              <button>visit website</button>
+              <button
+                onclick="window.open('https://isaaxh.github.io/tic_tac_toe_odinProj/')"
+              >
+                visit website
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <button class="btn-github">See more on GitHub</button>
+      <button
+        class="btn-github"
+        onclick="window.open('https://github.com/isaaxh?tab=repositories')"
+      >
+        See more on GitHub
+      </button>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <form action="contact-details.html" method="GET">
         <h1 class="contact-header">Get in touch</h1>
         <div class="name-email-container">
@@ -218,9 +256,24 @@
     <footer class="footer">
       <div class="footer-links-container">
         <ul>
-          <li class="footer-link linkedIn">LinkedIn</li>
-          <li class="footer-link email">Email</li>
-          <li class="footer-link github">GitHub</li>
+          <li>
+            <a
+              class="footer-link linkedIn"
+              href="https://www.linkedin.com/in/isaac-hussain/"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="footer-link email" href="mailto:isaax.business@gmail.com"
+              >Email
+            </a>
+          </li>
+          <li>
+            <a class="footer-link github" href="https://github.com/isaaxh"
+              >GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

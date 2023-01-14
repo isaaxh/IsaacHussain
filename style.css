@@ -20,17 +20,6 @@
     --border-radius: 8px;
     --border-radius-contact: 4px;
     --border-radius-round: 25px;
-
-    /* --primary-color: rgb(235, 235, 235);
-    --secondary-color: #ffff;
-    --hover-color: #814ece;
-    --text-color-1: #ffff;
-    --text-color-2: rgba(15, 15, 15, 0.933);
-
-    --primary-color: #292c35;
-    --secondary-color: #191d27;
-    --text-color-2: #ffff;
-    --text-color-1: rgba(15, 15, 15, 0.933); */
 }
 
 * {
@@ -72,11 +61,15 @@ nav .nav-list {
 }
 
 
-nav .list-items, nav .logo  {
+nav a, nav .logo  {
     font-size: var(--font-header-3);
 }
 
-.list-items:hover {
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
     color: var(--accent-color);
     cursor: pointer;
 }
@@ -105,6 +98,12 @@ nav .logo {
     font-weight: var(--font-weight);
     margin: 120px auto 20px; 
     text-align: center;
+}
+
+.hero-section img {
+    position: absolute;
+    bottom: -10px;
+    transform: scale(2.5);
 }
 
 /* about page */
@@ -433,12 +432,13 @@ footer ul{
     display: flex;
 }
 
-footer li {
+footer a {
     color: var(--text-color-1);
+    text-decoration: none;
     margin: 20px;
     cursor: pointer;
 }
 
-footer li:hover {
+footer a:hover {
     color: rgb(164, 162, 162);
 }
