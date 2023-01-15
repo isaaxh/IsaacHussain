@@ -2,4 +2,4 @@
 
 - hello world
 
-[live demo]: https://isaaxh.github.io/IsaacHussain/
+[live demo](https://isaaxh.github.io/IsaacHussain/)
